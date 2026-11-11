@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>红色坐标 · 星火陇原</title>
+  <meta name="description" content="甘肃八处红色坐标互动地图：两当兵变、南梁、腊子口、哈达铺、会宁会师、山城堡、高台、兰州战役。点击星火，阅读一段陇原往事。">
+  <meta name="theme-color" content="#a92b22">
+  <script>document.documentElement.classList.add('has-js');</script>
+  <link rel="icon" href="../images/emblem.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-head">
+    <div class="wrap site-head__inner">
+      <a class="brand" href="../index.html" aria-label="星火陇原首页">
+        <img src="../images/emblem.svg" alt="">
+        <span class="brand__text">
+          <span class="brand__name">星火陇原</span>
+          <span class="brand__sub">STARS OVER LONGYUAN</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="../index.html">首页</a>
+        <a href="landmarks.html" class="is-active" aria-current="page">红色坐标</a>
+        <a href="march.html">长征足迹</a>
+        <a href="agnu.html">农大接力</a>
+        <a href="about.html">创作说明</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="../index.html">首页</a><span>/</span><span>红色坐标</span>
+        </nav>
+        <div class="page-hero__grid">
+          <div>
+            <p class="kicker">八个坐标 · 一次巡礼</p>
+            <h1>把地图上的点，走成故事</h1>
+            <p class="page-hero__lead">点击地图上的星火，读一段发生在甘肃的红色往事。每读一处，它就收进右侧的星火册。点满<span class="nowrap">八处</span>，这一趟巡礼就完整了。</p>
+          </div>
+          <div class="page-hero__side">
+            <div>8 COORDINATES</div>
+            <div>1932 — 1949</div>
+            <div>GANSU · CHINA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landmarks">
+      <div class="wrap">
+        <div class="progress-panel" id="progressPanel">
+          <div class="progress-panel__title">
+            <span>星火册</span>
+            <span class="progress-panel__count" data-lit-count>0 / 8</span>
+          </div>
+          <div class="progress-meter">
+            <div class="progress-track"><div class="progress-fill" data-lit-progress></div></div>
+            <div class="slots" id="litSlots" aria-hidden="true"></div>
+          </div>
+          <button class="progress-panel__reset" type="button" data-reset-lit>清空星火册</button>
+        </div>
+
+        <p class="sr-only" data-live aria-live="polite"></p>
+
+        <div class="filters" role="group" aria-label="按类型筛选坐标">
+          <span class="filters__label">筛选</span>
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" type="button" data-filter="changzheng" aria-pressed="false">长征</button>
+          <button class="chip" type="button" data-filter="genjudi" aria-pressed="false">根据地</button>
+          <button class="chip" type="button" data-filter="xilujun" aria-pressed="false">西路军</button>
+          <button class="chip" type="button" data-filter="jiefang" aria-pressed="false">解放</button>
+        </div>
+
+        <div class="explorer">
+          <div class="explorer__map">
+            <div class="map-shell">
+              <div class="map-head">
+                <div class="map-head__label">GANSU / 甘肃红色坐标<br>CLICK A STAR · READ A STORY</div>
+                <img class="map-head__stamp" src="../images/stamp-light.svg" alt="" aria-hidden="true">
+              </div>
+              <div class="map-stage" id="fullMap">
+                <noscript><img class="map-fallback" src="../images/gansu-map.svg" alt="甘肃红色坐标示意图：八处坐标分布在河西、陇中、陇东与陇南"></noscript>
+              </div>
+              <div class="map-legend">
+                <span class="legend-item"><span class="legend-line"></span>长征路线（示意）</span>
+                <span class="legend-item"><span class="legend-line legend-line--dashed"></span>西路军西进（示意）</span>
+                <span class="legend-item"><span class="legend-line legend-line--river"></span>黄河</span>
+              </div>
+              <p class="map-footnote">示意图，非精确行政边界 · 点击星火或下方卡片</p>
+            </div>
+            <div class="legend-row">
+              <span>地图点位按历史事件发生地标注</span>
+              <span>建议按时间顺序阅读</span>
+            </div>
+          </div>
+
+          <aside aria-label="坐标详情">
+            <article class="detail detail--empty" id="landmarkDetail">
+              <div>
+                <p class="detail-kicker">怎么用 / HOW TO</p>
+                <h2 class="detail-title">先选一处星火</h2>
+                <p class="detail-story">点击地图上的星标，或下方的坐标卡片。每读一处，它就会被点亮，收进上方的星火册。</p>
+                <p class="detail-hint">也可以用 Tab 键在星标之间移动，按 Enter 打开。星火册记录保存在本机浏览器里，不会上传。</p>
+                <div class="detail-starts">
+                  <p class="detail-starts__label">可以从这里开始</p>
+                  <button class="detail-start" type="button" data-start="liangdang"><span class="year">1932</span><span>两当兵变</span><span class="arrow">→</span></button>
+                  <button class="detail-start" type="button" data-start="lazikou"><span class="year">1935</span><span>腊子口</span><span class="arrow">→</span></button>
+                  <button class="detail-start" type="button" data-start="huining"><span class="year">1936</span><span>会宁会师</span><span class="arrow">→</span></button>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </div>
+
+        <section class="landmark-wrap" aria-labelledby="cardTitle">
+          <div class="landmark-wrap__head">
+            <h2 id="cardTitle">坐标卡片</h2>
+            <span class="note">按时间排列 · 8 处</span>
+          </div>
+          <div class="cards" id="landmarkGrid"></div>
+          <div class="legend-row">
+            <span>未点亮的坐标不会被隐藏，只是暂时留白</span>
+            <span>星火册可随时清空</span>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <img class="foot-stamp" src="../images/stamp-light.svg" alt="" aria-hidden="true">
+        <div>
+          <p class="foot-title">星火陇原 · 甘肃红色坐标数字巡礼</p>
+          <p class="foot-note">甘肃农业大学第五届红色网页设计大赛参赛作品。地图边界基于公开行政区划数据重绘，仅作示意；史料引用与原创说明见创作说明页。</p>
+        </div>
+        <nav class="foot-links" aria-label="页脚导航">
+          <a href="../index.html">返回首页</a>
+          <a href="about.html">创作说明</a>
+          <a href="about.html#sources">史料来源</a>
+        </nav>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 星火陇原 · 原创作品，仅供大赛展示</span>
+        <span>STARS OVER LONGYUAN / GANSU</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/map.js"></script>
+</body>
+</html>

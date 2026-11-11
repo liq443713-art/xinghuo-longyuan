@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>创作说明 · 星火陇原</title>
+  <meta name="description" content="《星火陇原》创作说明：设计理念、页面结构、技术实现、原创声明与史料来源。">
+  <meta name="theme-color" content="#a92b22">
+  <script>document.documentElement.classList.add('has-js');</script>
+  <link rel="icon" href="../images/emblem.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-head">
+    <div class="wrap site-head__inner">
+      <a class="brand" href="../index.html" aria-label="星火陇原首页">
+        <img src="../images/emblem.svg" alt="">
+        <span class="brand__text">
+          <span class="brand__name">星火陇原</span>
+          <span class="brand__sub">STARS OVER LONGYUAN</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="../index.html">首页</a>
+        <a href="landmarks.html">红色坐标</a>
+        <a href="march.html">长征足迹</a>
+        <a href="agnu.html">农大接力</a>
+        <a href="about.html" class="is-active" aria-current="page">创作说明</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="../index.html">首页</a><span>/</span><span>创作说明</span>
+        </nav>
+        <div class="page-hero__grid">
+          <div>
+            <p class="kicker">创作说明 · ABOUT THE WORK</p>
+            <h1>以地图为纸，以星火为墨</h1>
+            <p class="page-hero__lead">《星火陇原》不是一份按时间罗列的史料清单，而是一张可以走进、可以点亮的甘肃红色地图。我们希望历史有坐标，记忆有温度，青年有去处。</p>
+          </div>
+          <div class="page-hero__side">
+            <div>VERSION 1.0 · 2026</div>
+            <div>HTML · CSS · JavaScript</div>
+            <div>NO EXTERNAL DEPENDENCIES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page">
+      <div class="wrap">
+        <div class="about-grid" id="work">
+          <div class="about-grid__side">
+            <p class="kicker">作品概述</p>
+            <h2>一张甘肃红色地图</h2>
+          </div>
+          <div class="about-grid__body">
+            <h3>作品名称</h3>
+            <p>《星火陇原——甘肃红色坐标数字巡礼》</p>
+
+            <h3>作品主题</h3>
+            <p>以甘肃八处红色坐标为线索——两当兵变、南梁、腊子口、哈达铺、会宁会师、山城堡、高台、兰州战役——串起 1932 至 1949 年的陇原红色记忆，并把这段历史与甘肃农业大学“知农爱农、强农兴农”的青年使命连接起来。</p>
+
+            <h3>页面构成</h3>
+            <table class="table">
+              <thead>
+                <tr><th>页面</th><th>内容</th><th>交互</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>index.html</td><td>主题首屏、互动地图预览、八处坐标目录、长征四站、农大桥接</td><td>星火入口、滚动入场</td></tr>
+                <tr><td>pages/landmarks.html</td><td>完整的甘肃红色坐标地图、八段事件详情、星火册</td><td>点亮星火、筛选、详情翻页、键盘操作、进度保存</td></tr>
+                <tr><td>pages/march.html</td><td>长征在甘肃的四站时间线、会师意义、红西路军高台血战</td><td>滚动入场、坐标跳转</td></tr>
+                <tr><td>pages/agnu.html</td><td>甘农大八十年校史、校训校风、红色基因与强农兴农</td><td>青春接力登记（本地保存）</td></tr>
+                <tr><td>pages/about.html</td><td>设计理念、技术实现、原创声明与史料来源</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="about-grid" id="design">
+          <div class="about-grid__side">
+            <p class="kicker">设计理念</p>
+            <h2>让记忆落在地图上</h2>
+          </div>
+          <div class="about-grid__body">
+            <h3>为什么是地图</h3>
+            <p>红色故事常常以“地点”被记住：会师的城楼、定方向的药铺、血战的城墙。与其把八段历史平铺成文章，不如把它们放回甘肃的地理轮廓里——让抽象的“精神”重新获得经纬度。点击一处星火，地图会告诉你它在河西、陇中、陇东还是陇南。</p>
+
+            <h3>视觉语言</h3>
+            <p>颜色取自旧地图与宣纸：墨夜、朱砂、麦金与青灰。夜色的地图像一张行军图，朱砂用来标记路线与星火，麦金来自麦穗与土地。页面中的等高线、邮戳、麦穗纹样与星徽，均由本作品以 SVG 手工绘制，没有使用外部图片与商业字体。</p>
+
+            <h3>排版与阅读</h3>
+            <p>标题用宋体，引文与题签用楷体，坐标与数据用等宽字体，正文用无衬线体。三种字体的分工对应三种信息：历史叙述、文献引语与地理数据。正文行宽控制在舒适阅读区间，重点信息用朱砂色标出，而不是靠大面积的装饰色块。</p>
+
+            <h3>签名元素：星火册</h3>
+            <p>地图上的每一个点亮动作，都会在“星火册”里留下一个印章位置。八处坐标全部点亮后，会出现完整的收束提示。我们刻意没有设置积分、排行或虚构的参与人数——星火册只记录你自己的阅读进度，保存在本机浏览器里，可随时清空。这是对“走过”的一种诚实记录。</p>
+
+            <h3>动效克制</h3>
+            <p>页面只在地图路线绘入、星火点亮与内容入场时使用动效；并完整支持系统的“减少动态效果”设置。我们希望动效服务于理解，而不是制造热闹。</p>
+          </div>
+        </div>
+
+        <div class="about-grid" id="tech">
+          <div class="about-grid__side">
+            <p class="kicker">结构与技术</p>
+            <h2>轻量、可移植、离线可用</h2>
+          </div>
+          <div class="about-grid__body">
+            <h3>文件结构（目录层次不超过 3 层）</h3>
+            <pre class="tree">red-web/
+├── index.html
+├── pages/
+│   ├── landmarks.html
+│   ├── march.html
+│   ├── agnu.html
+│   └── about.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── data.js
+│   ├── main.js
+│   └── map.js
+└── images/
+    ├── emblem.svg
+    ├── gansu-map.svg
+    ├── hero-contour.svg
+    ├── paper-grain.svg
+    ├── stamp.svg
+    ├── stamp-light.svg
+    ├── star-marker.svg
+    └── wheat-divider.svg</pre>
+
+            <h3>技术实现</h3>
+            <p>页面使用 HTML5、CSS3 与原生 JavaScript 编写，不依赖任何框架、外部字体、CDN 或在线接口。所有本地链接均采用相对路径；图片统一存放在 <code>images/</code> 目录下。双击 <code>index.html</code> 即可离线浏览，也可以放入任意静态服务器。</p>
+            <p>地图由 <code>js/data.js</code> 中的边界路径与坐标数据生成，地图点位采用原生按钮，支持 Tab 键导航与 Enter / 空格触发。星火册与青春接力记录使用 <code>localStorage</code>，在不可用环境下自动降级为不保存。</p>
+            <p>页面在桌面与移动端均可使用，并包含键盘焦点样式、跳过导航链接、屏幕阅读器播报区域与“减少动态效果”适配。</p>
+            <p>兼容性方面，页面按 Edge 90（Chromium 90）内核能力编写，不使用 <code>:has()</code>、<code>accent-color</code> 等该版本不支持的样式；评审可在 Edge 90.0 及以上版本中直接访问公网部署地址。</p>
+
+            <h3>数据与图片说明</h3>
+            <p>八处坐标的火星位置依据公开经纬度换算；参考路线为示意连接，不代表精确行军轨迹。甘肃轮廓基于公开行政区划边界数据简化、平滑重绘，仅用于视觉叙事，不作为地理测绘成果使用。</p>
+          </div>
+        </div>
+
+        <div class="about-grid" id="sources">
+          <div class="about-grid__side">
+            <p class="kicker">素材与史料来源</p>
+            <h2>我们核对过的资料</h2>
+          </div>
+          <div class="about-grid__body">
+            <h3>地图边界数据</h3>
+            <p>阿里云 DataV.GeoAtlas 甘肃省边界数据，经简化与平滑处理，仅作示意。<br>
+              <a href="https://geo.datav.aliyun.com/areas_v3/bound/620000.json" target="_blank" rel="noopener">https://geo.datav.aliyun.com/areas_v3/bound/620000.json</a>
+            </p>
+
+            <h3>校史资料</h3>
+            <ul class="source-list">
+              <li>甘肃农业大学官网《校史总览》：<a href="https://www.gsau.edu.cn/xywh1/xszl.htm" target="_blank" rel="noopener">gsau.edu.cn/xywh1/xszl.htm</a></li>
+              <li>甘肃农业大学官网《历史沿革》：<a href="https://www.gsau.edu.cn/xxgk/lsyg.htm" target="_blank" rel="noopener">gsau.edu.cn/xxgk/lsyg.htm</a></li>
+              <li>甘肃农业大学《建校 80 周年公告（第一号）》：<a href="https://www.gsau.edu.cn/info/1279/55289.htm" target="_blank" rel="noopener">gsau.edu.cn/info/1279/55289.htm</a></li>
+            </ul>
+
+            <h3>党史与红色文化资料</h3>
+            <ul class="source-list">
+              <li>中国共产党新闻网《会宁红军会师楼》：<a href="http://cpc.people.com.cn/GB/64176/64180/2523603.html" target="_blank" rel="noopener">cpc.people.com.cn</a></li>
+              <li>中央党史和文献研究院《红军会宁会师楼旧址（甘肃篇）》：<a href="https://www.dswxyjy.org.cn/n/2013/0407/c222137-21044909.html" target="_blank" rel="noopener">dswxyjy.org.cn</a></li>
+              <li>人民网党史频道《哈达铺：“红军长征中的加油站”》：<a href="http://dangshi.people.com.cn/n/2012/1203/c85037-19776450.html" target="_blank" rel="noopener">dangshi.people.com.cn</a></li>
+              <li>新华网《山城堡战役：红军三大主力会师后的第一个大胜仗》：<a href="https://www.xinhuanet.com/politics/2017-08/05/c_1121436051.htm" target="_blank" rel="noopener">xinhuanet.com</a></li>
+              <li>央视网《南梁精神——烛照陕甘的信仰之光》：<a href="https://news.cctv.com/2025/09/19/ARTINBOQOoIntN5t0Vrn85hr250919.shtml" target="_blank" rel="noopener">news.cctv.com</a></li>
+              <li>中国共产党新闻网《“两当兵变”的重要历史和现实意义》：<a href="https://cpc.people.com.cn/n1/2022/0720/c443712-32480427.html" target="_blank" rel="noopener">cpc.people.com.cn</a></li>
+              <li>中国军网《董振堂：“流尽最后一滴血，战斗到底！”》：<a href="http://www.81.cn/yl_208589/16388609.html" target="_blank" rel="noopener">81.cn</a></li>
+              <li>甘肃党史网《血战高台城》：<a href="http://gsds.gov.cn/dangshixuanchuan/longyuanhonggushi/20200518/160841119ae88e.htm" target="_blank" rel="noopener">gsds.gov.cn</a></li>
+            </ul>
+            <p>兰州战役等史实参照《中国共产党简史》及相关地方党史资料。网页叙述为编写者依据上述资料自行撰写，若与权威出版物存在出入，以权威出版物为准。</p>
+          </div>
+        </div>
+
+        <div class="about-grid" id="statement">
+          <div class="about-grid__side">
+            <p class="kicker">原创声明</p>
+            <h2>关于原创</h2>
+          </div>
+          <div class="about-grid__body">
+            <div class="statement">
+              <img class="statement-seal" src="../images/stamp.svg" alt="" aria-hidden="true">
+              <p>本作品除注明来源的地图边界数据与党史史料外，页面设计、版式、文案、地图绘制与全部 SVG 插画均为原创，未使用任何未经授权的图片、字体、模板或代码库。作品不包含抄袭、剽窃或伪造信息。</p>
+              <p style="margin-top:14px">史料引用仅用于事实核对，所有网页内容均为本人根据公开资料重新撰写。若作品在提交或展示过程中需要调整，将以书面说明为准。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid" id="team">
+          <div class="about-grid__side">
+            <p class="kicker">参赛信息</p>
+            <h2>满莹 · 动物医学院</h2>
+          </div>
+          <div class="about-grid__body">
+            <p>本作品为个人独立参赛，方案设计主创：满莹。</p>
+            <table class="table">
+              <tbody>
+                <tr><th>作品名称</th><td>星火陇原——甘肃红色坐标数字巡礼</td></tr>
+                <tr><th>参赛者 / 负责人</th><td>满莹</td></tr>
+                <tr><th>团队名称</th><td>星火陇原</td></tr>
+                <tr><th>团队成员</th><td>满莹（独立参赛，方案设计主创）</td></tr>
+                <tr><th>所在学院</th><td>动物医学院</td></tr>
+                <tr><th>专业</th><td>兽医专硕</td></tr>
+                <tr><th>联系方式</th><td>19139206213</td></tr>
+                <tr><th>提交日期</th><td>2026 年 11 月</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <img class="foot-stamp" src="../images/stamp-light.svg" alt="" aria-hidden="true">
+        <div>
+          <p class="foot-title">星火陇原 · 甘肃红色坐标数字巡礼</p>
+          <p class="foot-note">甘肃农业大学第五届红色网页设计大赛参赛作品。本页所列来源仅用于史实核对与学术说明，版权归原作者与发布机构所有。</p>
+        </div>
+        <nav class="foot-links" aria-label="页脚导航">
+          <a href="../index.html">返回首页</a>
+          <a href="#sources">史料来源</a>
+          <a href="#team">参赛信息</a>
+        </nav>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 星火陇原 · 原创作品，仅供大赛展示</span>
+        <span>STARS OVER LONGYUAN / GANSU</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

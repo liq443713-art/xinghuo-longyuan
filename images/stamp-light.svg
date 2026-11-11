@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <path id="arcTop" d="M 44 120 A 76 76 0 0 1 196 120"/>
+    <path id="arcBottom" d="M 44 120 A 76 76 0 0 0 196 120"/>
+  </defs>
+  <g transform="rotate(-7 120 120)" fill="#E4D8C4" opacity="0.85">
+    <circle cx="120" cy="120" r="110" fill="none" stroke="#E4D8C4" stroke-width="3.6"/>
+    <circle cx="120" cy="120" r="101" fill="none" stroke="#E4D8C4" stroke-width="0.9" stroke-dasharray="3 4"/>
+    <circle cx="120" cy="120" r="54" fill="none" stroke="#E4D8C4" stroke-width="1"/>
+    <text font-family="STKaiti, KaiTi, 'Kaiti SC', serif" font-size="24" letter-spacing="3" fill="#E4D8C4">
+      <textPath href="#arcTop" xlink:href="#arcTop" startOffset="50%" text-anchor="middle">陇原红色足迹</textPath>
+    </text>
+    <text font-family="Consolas, 'Courier New', monospace" font-size="10.5" letter-spacing="2" fill="#E4D8C4">
+      <textPath href="#arcBottom" xlink:href="#arcBottom" startOffset="50%" text-anchor="middle">1932 — 1949 · GANSU</textPath>
+    </text>
+    <path d="M120 86 L122.4 98.5 L134.8 98.8 L125.8 107.2 L129.4 121.4 L120 113.8 L110.6 121.4 L114.2 107.2 L105.2 98.8 L117.6 98.5 Z" fill="#E4D8C4"/>
+    <text x="120" y="150" text-anchor="middle" font-family="STKaiti, KaiTi, 'Kaiti SC', serif" font-size="18" letter-spacing="4" fill="#E4D8C4">星火陇原</text>
+    <text x="120" y="162" text-anchor="middle" font-family="Consolas, monospace" font-size="6.5" letter-spacing="3" fill="#E4D8C4" opacity="0.8">STARS OVER LONGYUAN</text>
+  </g>
+</svg>
